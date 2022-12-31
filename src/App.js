@@ -30,16 +30,16 @@ function App() {
  
   return (
     <div className="App">
-      <div className="logo">
+      <div className="head">
         <img src={process.env.PUBLIC_URL + '/img/logo.png'} alt='Lotto 번호생성기' />
-      </div>
-      
+      </div>      
       <div className='main'>
         <h1>{lotto.toLocaleString()}</h1>
         <button className="btn" onClick={()=>번호생성함수()}>
           행운의 번호여, 나에게 오라!
-        </button>  
+        </button>    
       </div>
+      <div className="footer" />
     </div>
   );
 };
